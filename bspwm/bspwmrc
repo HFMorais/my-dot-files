@@ -46,7 +46,7 @@ bspc rule -a Blueman-manager state=floating
 
 # Push it!
 bspc rule -a transmission-gtk:transmission-gtk -o desktop='^9'
-bspc rule -a Spotify desktop='^6' follow=off
+bspc rule -a Spotify desktop='^5' follow=off
 bspc rule -a Discord desktop='^7'
 
 # Auto Start

@@ -59,8 +59,11 @@ super + Escape
 
 # Reload polybar
 super + ctrl + Escape
-	bash ~/Work/my-polybar/launch.sh &
+	bash ~/.config/polybar/launch.sh &
 
+# Call powermenu
+super + shift + q
+	bash ~/.config/rofi/powermenu/powermenu.sh
 
 #
 # bspwm hotkeys

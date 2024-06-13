@@ -1,14 +1,16 @@
 #!/bin/bash
 output=""
-if ip link show | grep -q "enp6s0.*state UP"; then
-    output="%{T4} %{T5}enp6s0"
+
+interface=$(ip route show default | awk '/default/ {print $5}')
+if [ -z "$interface" ]; then
+    output="offline"
 else
-    output="%{T4} %{T5}Offline"
+    output=$interface
 fi
 
 if paru -Q | grep -q "nordvpn"; then
     if nordvpn status | grep -q "Status: Connected"; then
-         output=${output}" "
+         output=${output}"%{T2} "
     fi
 fi
 
