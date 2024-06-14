@@ -61,6 +61,16 @@ super + Escape
 super + ctrl + Escape
 	bash ~/.config/polybar/launch.sh &
 
+# Screenshots
+Print
+    flameshot launcher
+
+Print + alt
+    flameshot screen
+
+Print + ctrl
+    flameshot full
+
 # Call powermenu
 super + shift + q
 	bash ~/.config/rofi/powermenu/powermenu.sh
