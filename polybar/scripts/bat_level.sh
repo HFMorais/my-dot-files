@@ -31,7 +31,7 @@ else
 fi
 
 if [ $charging -eq 1 ]; then
-    output_icon="  "
+    output_icon=" "
 fi
 
 printf "%s" "$output_icon$output_value"
