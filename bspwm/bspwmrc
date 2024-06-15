@@ -45,7 +45,7 @@ bspc rule -a Yad state=floating
 bspc rule -a Blueman-manager state=floating
 
 # Push it!
-bspc rule -a transmission-gtk:transmission-gtk -o desktop='^9'
+bspc rule -a transmission-gtk:transmission-gtk -o desktop='^8'
 bspc rule -a Spotify desktop='^5' follow=off
 bspc rule -a Discord desktop='^7'
 
