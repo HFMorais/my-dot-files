@@ -10,7 +10,7 @@ bat_total_value=$((bat_medium / 2))
 
 output_value=""
 output_icon=""
-if [ $bat_total_value -gt 96 ]; then
+if [ $bat_total_value -gt 94 ]; then
     output_value="Full"
     output_icon="  "
 elif [ $bat_total_value -gt 80 ]; then
