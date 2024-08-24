@@ -1,7 +1,10 @@
 #! /bin/sh
 
 # Resolution hack for now
-#xrandr --output DP-0 --mode 3440x1440 --rate 74.98
+xrandr --output DP-0 --mode 3440x1440 --rate 74.98
+
+#NVidia Tweak
+nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }"
 
 ###########################################
 ##  Auto Starts
@@ -43,6 +46,7 @@ bspc rule -a Xarchiver state=floating
 bspc rule -a Pavucontrol state=floating
 bspc rule -a Yad state=floating
 bspc rule -a Blueman-manager state=floating
+bspc rule -a nwg-look state=floating
 
 # Push it!
 bspc rule -a transmission-gtk:transmission-gtk -o desktop='^8'
@@ -53,4 +57,5 @@ bspc rule -a Discord desktop='^7'
 bspc desktop -f ^9
 lxpolkit &
 picom --config ~/.config/bspwm/picom.conf &
+#picom --config ~/.config/bspwm/picom_animations.conf &
 bspc desktop -f ^1
