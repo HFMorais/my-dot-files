@@ -49,7 +49,7 @@ case ${chosen} in
 		systemctl reboot
         ;;
     $lock)
-    	bash ~/.scripts/lock-screen.sh
+		betterlockscreen -l blur
         ;;
     $suspend)
 		mpc -q pause

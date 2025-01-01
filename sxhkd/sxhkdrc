@@ -3,7 +3,7 @@
 #
 # terminal emulator
 super + Return
-	kitty
+	alacritty || kitty
 
 # program launcher
 super + @space
@@ -15,15 +15,15 @@ super + shift + @space
 
 # Lock screen
 super + l
-	bash ~/.scripts/lock-screen.sh
+	betterlockscreen -l blur
 
 # Browser
 super + b
-	thorium-browser
+	firefox || brave || vivaldi || thorium-browser
 
 # Private Browser
 super + shift + b
-	thorium-browser --incognito
+	firefox --private-window || brave --incognito || vivaldi  --incognito || thorium-browser --incognito 
 
 # Thunar
 super + d
@@ -38,15 +38,15 @@ super + y
     lryp
 
 # Youtube HD Video
-super + alt + y
+super + shift + y
     lryp -q 1080
 
 # Create Sticky floating window
-super + shift + y
+super + ctrl + y
     ~/.scripts/stick-floating-window.sh
 
 # Unstick and unfloat a window
-super + ctrl + y
+super + alt + y
     ~/.scripts/unstick-floating-window.sh
 
 # Quick suspend
