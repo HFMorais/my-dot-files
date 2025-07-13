@@ -8,7 +8,7 @@ else
     output=$interface
 fi
 
-if paru -Q | grep -q "nordvpn"; then
+if yay -Q | grep -q "nordvpn"; then
     if nordvpn status | grep -q "Status: Connected"; then
          output=${output}"%{T2} "
     fi

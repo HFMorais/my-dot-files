@@ -15,6 +15,12 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 # Polybar
 bash ~/.config/polybar/launch.sh &
 
+# Dunst
+/usr/bin/dunst &
+
+# Cursor stuff
+xsetroot -cursor_name left_ptr
+
 # Wallpaper
 feh --randomize --bg-fill /home/lobster/Pictures/Backgrounds/*
 
@@ -51,6 +57,7 @@ bspc rule -a nwg-look state=floating
 # Push it!
 bspc rule -a transmission-gtk:transmission-gtk -o desktop='^8'
 bspc rule -a Spotify desktop='^5' follow=off
+bspc rule -a steam desktop='^6' 
 bspc rule -a Discord desktop='^7'
 
 # Auto Start

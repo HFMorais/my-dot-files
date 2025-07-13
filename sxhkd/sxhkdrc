@@ -15,19 +15,19 @@ super + shift + @space
 
 # Lock screen
 super + l
-    betterlockscreen --lock blur
+    ~/.local/bin/betterlockscreen --lock blur
 
 # Browser
 super + b
-	brave || thorium-browser
+	zen-browser || google-chrome-stable || firefox || brave || thorium-browser
 
 # Private Browser
 super + shift + b
-	brave --incognito || thorium-browser --incognito
+	zen-browser --private-window || google-chrome-stable --incognito || firefox --private-window || brave --incognito || thorium-browser --incognito
 
 # Thunar
 super + d
-	nemo
+	nemo || thunar
 
 # NordVPN
 super + shift + n
