@@ -1,3 +1,4 @@
+[colors]
 background = #DD2E3440
 background-alt = #DD3B4252
 foreground = #C5C8C6
@@ -5,3 +6,4 @@ primary = #5E81AC
 secondary = #EBCB8B
 alert = #D08770
 disabled = #4C566A
+black = #000000
