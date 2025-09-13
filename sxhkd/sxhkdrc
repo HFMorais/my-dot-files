@@ -15,7 +15,7 @@ super + shift + @space
 
 # Lock screen
 super + l
-    ~/.local/bin/betterlockscreen --lock blur
+    betterlockscreen --lock blur
 
 # Browser
 super + b

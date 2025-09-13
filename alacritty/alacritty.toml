@@ -11,22 +11,22 @@ decorations_theme_variant = "Light" # "Dark"
 
 
 [font]
-size = 9.0
+size = 10.0
 
 [font.bold]
-family = "FiraCode Nerd Font Mono"
+family = "JetBrainsMono Nerd Font"
 style = "Bold"
 
 [font.bold_italic]
-family = "FiraCode Nerd Font Mono"
+family = "JetBrainsMono Nerd Font"
 style = "Bold Italic"
 
 [font.italic]
-family = "FiraCode Nerd Font Mono"
+family = "JetBrainsMono Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "FiraCode Nerd Font Mono"
+family = "JetBrainsMono Nerd Font"
 style = "Retina"
 
 [general]
