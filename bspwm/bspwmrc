@@ -62,6 +62,7 @@ bspc rule -a transmission-gtk:transmission-gtk -o desktop='^8'
 bspc rule -a Spotify desktop='^5' follow=off
 bspc rule -a steam desktop='^6' 
 bspc rule -a Discord desktop='^7'
+bspc rule -a bambu-studio desktop='^8'
 
 # Auto Start
 bspc desktop -f ^9
