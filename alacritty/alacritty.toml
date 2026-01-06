@@ -11,7 +11,7 @@ decorations_theme_variant = "Light" # "Dark"
 
 
 [font]
-size = 10.0
+size = 11.0
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
@@ -53,5 +53,6 @@ import = [
   # "~/.config/alacritty/nord.toml"
   # "~/.config/alacritty/catppuccin-mocha.toml"
   "~/.config/alacritty/dracula.toml"
+  # "~/.config/alacritty/gruvbox.toml"
 ]
 
