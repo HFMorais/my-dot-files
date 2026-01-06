@@ -19,11 +19,11 @@ super + l
 
 # Browser
 super + b
-	zen-browser || google-chrome-stable || firefox || brave || thorium-browser
+	 zen-browser || firefox || google-chrome-stable || brave || thorium-browser
 
 # Private Browser
 super + shift + b
-	zen-browser --private-window || google-chrome-stable --incognito || firefox --private-window || brave --incognito || thorium-browser --incognito
+	 zen-browser --private-window || firefox --private-window || google-chrome-stable --incognito ||  brave --incognito || thorium-browser --incognito
 
 # Thunar
 super + d
@@ -106,6 +106,14 @@ XF86Audio{Raise,Lower}Volume
  
 XF86AudioMute  
 	pulsemixer  --toggle-mute
+
+# Brightness up
+XF86MonBrightnessUp
+    brightnessctl set +5%
+
+# Brightness down
+XF86MonBrightnessDown
+    brightnessctl set 5%-
 
 
 # This is to bypass my shitty keyboard F / media key handling most users won't need this (no longer needed)
