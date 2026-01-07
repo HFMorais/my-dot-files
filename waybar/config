@@ -1,0 +1,49 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 10,
+    "margin-right": 10,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["tray", "bluetooth", "pulseaudio", "network", "cpu", "memory", "battery"],
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate"
+    },
+
+    "bluetooth": {
+        "format": " 󰂯 ",
+        "tooltip": true,
+	    "tooltip-format": "Bluetooth Settings",
+        "on-click": "alacritty -e 'bluetui'"
+    },
+
+    "clock": {
+        "format": "{:%H:%M} ",
+        "format-alt": "{:%A, %B %d, %Y} ",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+
+    "cpu": { "format": "{usage}% " },
+    "memory": { "format": "{}% " },
+    "battery": {
+        "states": { "warning": 30, "critical": 15 },
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        "format-wifi": "{essid} ",
+        "format-ethernet": "Connected ",
+        "format-disconnected": "Disconnected ⚠"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-muted": "🔇",
+        "format-icons": { "default": ["", "", ""] }
+    }
+}
