@@ -6,12 +6,14 @@
     border-radius: 0;
     padding-top: 2px;
     padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 window#waybar {
-    background-color: rgba(26, 27, 38, 0.5); /* Transparent dark blue/grey */
-    border-radius: 12px;
-    color: #ffffff;
+    background-color: rgba(40, 42, 54, 0.7);
+    border-radius: 0px;
+    color: #f8f8f2;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -20,12 +22,12 @@ window#waybar {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #ffffff;
+    color: #f8f8f2;
 }
 
 #workspaces button.active {
-    color: #7aa2f7;
-    border-bottom: 2px solid #7aa2f7;
+    color: #bd93f9;
+    border-bottom: 2px solid #bd93f9;
 }
 
 #window {
@@ -42,13 +44,13 @@ window#waybar {
 #tray {
     padding: 0 10px;
     margin: 4px 2px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(68, 71, 90, 0.5);
     border-radius: 8px;
 }
 
 /* Color accents for specific modules */
-#clock { color: #bb9af7; }
-#battery.charging { color: #9ece6a; }
-#battery.warning:not(.charging) { color: #f7768e; }
-#cpu { color: #7dcfff; }
-#memory { color: #e0af68; }
+#clock { color: #bd93f9; }
+#battery.charging { color: #50fa7b; }
+#battery.warning:not(.charging) { color: #ff5555; }
+#cpu { color: #8be9fd; }
+#memory { color: #ffb86c; }
