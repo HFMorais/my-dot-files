@@ -20,7 +20,7 @@ window#waybar {
 
 /* Individual Module Styling */
 #workspaces button {
-    padding: 0 5px;
+    padding: 0 0px;
     background-color: transparent;
     color: #f8f8f2;
 }

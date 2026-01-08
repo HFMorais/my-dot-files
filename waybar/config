@@ -7,13 +7,25 @@
     "margin-right": 0,
     "spacing": 4,
 
-    "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    "modules-center": ["clock"],
-    "modules-right": ["tray", "bluetooth", "pulseaudio", "network", "cpu", "memory", "battery"],
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["tray", "bluetooth", "pulseaudio", "network", "cpu", "memory", "battery", "clock"],
 
     "hyprland/workspaces": {
-        "format": "{name}",
-        "on-click": "activate"
+        "on-click": "activate",
+        "format":"{icon}",
+        "format-icons": {
+            "1": " ",
+            "2": " ",
+            "3": " ",
+            "4": " ",
+            "5": " ",
+            "6": " ",
+            "7": " ",
+            "8": " ",
+            "9": " ",
+            "10": " "
+        }
     },
 
     "bluetooth": {
@@ -29,18 +41,30 @@
         "tooltip-format": "<tt><small>{calendar}</small></tt>"
     },
 
-    "cpu": { "format": "{usage}% " },
-    "memory": { "format": "{}% " },
+    "tray": {
+        "spacing": 10
+    },
+
+    "cpu": { 
+        "format": "{usage}% " 
+    },
+
+    "memory": {
+         "format": "{}% " 
+    },
+    
     "battery": {
         "states": { "warning": 30, "critical": 15 },
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
     },
+
     "network": {
         "format-wifi": "{essid} ",
         "format-ethernet": "Connected ",
         "format-disconnected": "Disconnected ⚠"
     },
+
     "pulseaudio": {
         "format": "{volume}% {icon}",
         "format-muted": "🔇",
