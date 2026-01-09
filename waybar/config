@@ -50,7 +50,8 @@
     },
 
     "cpu": { 
-        "format": "{usage}% " 
+        "format": "{usage}% ",
+        "on-click": "alacritty -e sh -c 'btop'"
     },
 
     "memory": {
