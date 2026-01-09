@@ -8,42 +8,35 @@
     "spacing": 4,
     "height": 34,
 
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["tray", "bluetooth", "pulseaudio", "network", "temperature", "cpu", "memory", "battery", "clock"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["custom/music"],
+    "modules-right": ["tray", "pulseaudio", "network", "temperature", "cpu", "memory", "battery", "clock"],
 
-    "custom/spotify": {
-        "format": "{output}",
-        "exec": "/home/lobster/Work/my-dot-files/polybar/scripts/get_spotify_status.sh",
-        "interval": 5,
-        "return-type": "text",
+    "custom/music": {
+        "exec": "~/.config/waybar/scripts/get_spotify_status.sh",
+        "interval": 10,
         "on-click": "playerctl play-pause",
         "on-scroll-up": "playerctl next",
-        "on-scroll-down": "playerctl previous"
+        "on-scroll-down": "playerctl previous",
+        "format": "{}",
+        "tooltip": false
     },
 
     "hyprland/workspaces": {
         "on-click": "activate",
         "format":"{icon}",
         "format-icons": {
-            "1": " ",
-            "2": " ",
-            "3": " ",
-            "4": " ",
-            "5": " ",
-            "6": " ",
-            "7": " ",
-            "8": " ",
-            "9": " ",
-            "10": " "
+            "1": "1:  ",
+            "2": "2:  ",
+            "3": "3:  ",
+            "4": "4:  ",
+            "5": "5:  ",
+            "6": "6:  ",
+            "7": "7:  ",
+            "8": "8:  ",
+            "9": "9:  ",
+            "10": "0:  "
         }
-    },
-
-    "bluetooth": {
-        "format": " 󰂯 ",
-        "tooltip": true,
-	    "tooltip-format": "Bluetooth Settings",
-        "on-click": "alacritty -e 'bluetui'"
     },
 
     "clock": {
