@@ -50,9 +50,9 @@ style = "Retina"
 # https://github.com/alacritty/alacritty/tree/master#configuration
 
 import = [
-  # "~/.config/alacritty/nord.toml"
+  "~/.config/alacritty/nord.toml"
   # "~/.config/alacritty/catppuccin-mocha.toml"
-  "~/.config/alacritty/dracula.toml"
+  # "~/.config/alacritty/dracula.toml"
   # "~/.config/alacritty/gruvbox.toml"
 ]
 

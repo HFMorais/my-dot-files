@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-WALLPAPER_DIR="$HOME/Pictures/Backgrounds/Dracula"
+WALLPAPER_DIR="$HOME/Pictures/Backgrounds/Nord"
 
 # Pick a random image
 WALLPAPER=$(find "$WALLPAPER_DIR" -type f \( \
