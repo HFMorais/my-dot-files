@@ -60,7 +60,7 @@
 /* Reset all styles */
 * {
     border: none;
-    border-radius: 3px;
+    border-radius: 0px;
     min-height: 0;
     margin: 0.2em 0.3em 0.2em 0.3em;
 }
@@ -149,6 +149,8 @@
 /* Workspaces stuff */
 
 #workspaces {
+    margin-right: 0px;
+    padding-right: 0px;
  /*   color: #D8DEE9;
     margin-right: 10px;*/
 }
@@ -180,10 +182,11 @@
 }
 
 #window {
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 10px;
+    margin-left: 20px;
     font-weight: normal;
 }
+
 #bluetooth {
     background: @nord_bg_blue;
     font-size: 1.2em;
