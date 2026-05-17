@@ -1,6 +1,6 @@
 configuration{
     modi: "run,drun,window";
-    icon-theme: "Dracula";
+    icon-theme: "Nord";
     show-icons: true;
     terminal: "alacritty";
     drun-display-format: "{icon} {name}";
@@ -15,5 +15,5 @@ configuration{
     show-icons: false;
 }
 
-@theme "dracula-cute"
+@theme "nord-cute"
 
