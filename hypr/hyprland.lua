@@ -19,6 +19,12 @@ hl.monitor({
     position = "auto",
     scale    = "1",
 })
+-- hl.monitor({
+--     output   = "DP-2",
+--     mode     = "3440x1440@74.983002",
+--     position = "auto",
+--     scale    = "1",
+-- })
 
 ---------------------
 ---- MY PROGRAMS ----
