@@ -1,11 +1,11 @@
 {
     "layer": "bottom",
     "position": "top",
-
-    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    
+    "modules-left": ["ext/workspaces", "dwl/window"],
     "modules-center": ["custom/music"],
     "modules-right": ["tray", "cpu", "temperature", "battery", "pulseaudio", "network", "clock"],
-
+    
     "hyprland/workspaces": {
         "on-click": "activate",
         "format": "{icon}",
@@ -51,9 +51,9 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "today-format": "<b>{}</b>"
     },
-
+    
     "cpu": {
-        "interval": "5",
+        "interval": "5",      
         "format": "  {max_frequency}GHz <span color=\"darkgray\">| {usage}%</span>",
         "max-length": 16,
         "min-length": 16,

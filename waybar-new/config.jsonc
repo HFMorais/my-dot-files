@@ -1,0 +1,54 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "spacing": 8,
+  "modules-left": ["wlr/workspaces"],
+  "modules-center": ["wlr/title"],
+  "modules-right": ["cpu", "temperature", "memory", "tray", "battery", "network", "pulseaudio", "clock"],
+  "wlr/workspaces": {
+    "all-outputs": false,
+    "format": "{name}",
+    "on-click": "activate"
+  },
+  "wlr/title": {
+    "format": "{title}",
+    "max-length": 64
+  },
+  "cpu": {
+    "format": "CPU {usage}%",
+    "interval": 5
+  },
+  "temperature": {
+    "thermal-zone": 0,
+    "format": "{temperatureC}°C",
+    "interval": 5
+  },
+  "memory": {
+    "format": "MEM {percentage}%",
+    "interval": 10
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""],
+    "format-charging": "{capacity}% ",
+    "interval": 30
+  },
+  "network": {
+    "format-ethernet": "{ipaddr}/{cidr}",
+    "format-wifi": "{essid} ({signalStrength}%)",
+    "format-disconnected": "Disconnected",
+    "interval": 10
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+  "clock": {
+    "format": "{:%b %d %Y  %H:%M}",
+    "interval": 60
+  }
+}

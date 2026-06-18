@@ -1,0 +1,90 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "Fira Sans", "Font Awesome 6 Free", sans-serif;
+  font-size: 13px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: #2e3440;
+  color: #d8dee9;
+}
+
+#workspaces button {
+  padding: 0 6px;
+  background: transparent;
+  color: #4c566a;
+}
+
+#workspaces button.active {
+  color: #88c0d0;
+}
+
+#workspaces button.urgent {
+  color: #bf616a;
+}
+
+#window {
+  font-weight: bold;
+}
+
+#cpu,
+#temperature,
+#memory,
+#battery,
+#network,
+#pulseaudio,
+#clock,
+#tray {
+  padding: 0 8px;
+  margin: 0 2px;
+}
+
+#cpu {
+  color: #8fbcbb;
+}
+
+#temperature {
+  color: #a3be8c;
+}
+
+#memory {
+  color: #81a1c1;
+}
+
+#battery {
+  color: #ebcb8b;
+}
+
+#battery.charging {
+  color: #a3be8c;
+}
+
+#battery.warning:not(.charging) {
+  color: #d08770;
+}
+
+#battery.critical:not(.charging) {
+  color: #bf616a;
+}
+
+#network {
+  color: #88c0d0;
+}
+
+#network.disconnected {
+  color: #bf616a;
+}
+
+#pulseaudio {
+  color: #b48ead;
+}
+
+#pulseaudio.muted {
+  color: #4c566a;
+}
+
+#clock {
+  color: #d8dee9;
+}
