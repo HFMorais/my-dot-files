@@ -15,5 +15,5 @@ configuration{
     show-icons: false;
 }
 
-@theme "nord-cute"
+@theme "gruvbox"
 

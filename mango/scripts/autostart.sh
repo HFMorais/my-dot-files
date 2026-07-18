@@ -3,7 +3,7 @@
 ##################################################
 ## Set wallpaper
 ##################################################
-WALLPAPER_DIR="$HOME/Pictures/Backgrounds/Nord"
+WALLPAPER_DIR="$HOME/Pictures/Backgrounds/gruvbox"
 
 # Pick a random image
 WALLPAPER=$(find "$WALLPAPER_DIR" -type f \( \

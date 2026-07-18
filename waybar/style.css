@@ -28,34 +28,29 @@
 
 /* COLORS */
 
-/* Nord */
-@define-color bg #2E3440;
-/*@define-color bg #353C4A;*/
-@define-color light #D8DEE9;
-/*@define-color dark @nord_dark_font;*/
-@define-color warning #ebcb8b;
-@define-color critical #BF616A;
-@define-color mode #434C5E;
-/*@define-color workspaces @bg;*/
-/*@define-color workspaces @nord_dark_font;*/
-/*@define-color workspacesfocused #434C5E;*/
-@define-color workspacesfocused #4C566A;
+/* Gruvbox */
+@define-color bg #1d2021;
+@define-color light #ebdbb2;
+@define-color warning #d79921;
+@define-color critical #fb4934;
+@define-color mode #d3869b;
+@define-color workspacesfocused #458588;
 @define-color tray @workspacesfocused;
-@define-color sound #EBCB8B;
-@define-color network #5D7096;
-@define-color memory #546484;
-@define-color cpu #596A8D;
-@define-color temp #4D5C78;
-@define-color layout #5e81ac;
-@define-color battery #434C5E;
-@define-color date #434C5E;
-@define-color time #434C5E;
-@define-color backlight #434C5E;
-@define-color nord_bg #434C5E;
-@define-color nord_bg_blue #546484;
-@define-color nord_light #D8DEE9;
-@define-color nord_light_font #D8DEE9;
-@define-color nord_dark_font #434C5E;
+@define-color sound #fe8019;
+@define-color network #8ec07c;
+@define-color memory #83a598;
+@define-color cpu #d3869b;
+@define-color temp #fabd2f;
+@define-color layout #b16286;
+@define-color battery #d65d0e;
+@define-color date #98971a;
+@define-color time #d79921;
+@define-color backlight #458588;
+@define-color nord_bg #b16286;
+@define-color nord_bg_blue #689d6a;
+@define-color nord_light #d5c4a1;
+@define-color nord_light_font #ebdbb2;
+@define-color nord_dark_font #1d2021;
 
 /* Reset all styles */
 * {
@@ -158,7 +153,7 @@
 #workspaces button {
     font-weight: bold; /* Somewhy the bar-wide setting is ignored*/
     padding: 0;
-    color: #999;
+    color: #928374;
     opacity: 1;
     background: none;
     font-size: 1em;
@@ -166,19 +161,19 @@
 
 #workspaces button.focused {
     background: @workspacesfocused;
-    color: #D8DEE9;
+    color: #d5c4a1;
     opacity: 1;
     padding: 0 0.4em;
 }
 
 #workspaces button.urgent {
-    border-color: #c9545d;
-    color: #c9545d;
+    border-color: #fb4934;
+    color: #fb4934;
     opacity: 1;
 }
 
 #workspaces button.active {
-    color: #FFF;
+    color: #d5c4a1;
 }
 
 #window {
@@ -235,14 +230,14 @@
 
 #cpu {
     background: @nord_bg;
-    color: #D8DEE9;
+    color: #d5c4a1;
 }
 #cpu.critical {
     color: @nord_dark_font;
 }
 #language {
     background: @nord_bg_blue;
-    color: #D8DEE9;
+    color: #d5c4a1;
     padding: 0 0.4em;
 }
 #custom-cpugovernor {
@@ -254,7 +249,7 @@
 }
 #temperature {
     background-color: @nord_bg;
-    color: #D8DEE9;
+    color: #d5c4a1;
 }
 #temperature.critical {
     background:  @critical;
@@ -273,7 +268,7 @@
 
 #clock {
     background: @nord_bg_blue;
-    color: #D8DEE9;
+    color: #d5c4a1;
 }
 #clock.date {
     background: @date;
@@ -285,19 +280,19 @@
 
 #pulseaudio { /* Unsused but kept for those who needs it */
     background: @nord_bg_blue;
-    color: #D8DEE9;
+    color: #d5c4a1;
 }
 
 #pulseaudio.muted {
-    background: #BF616A;
-    color: #BF616A;
+    background: #fb4934;
+    color: #fb4934;
     /* No styles */
 }
 #pulseaudio.source-muted {
-    background: #D08770;
-    color: #D8DEE9;
+    background: #fe8019;
+    color: #d5c4a1;
     /* No styles */
 }
 #tray {
-    background: #434C5E;
+    background: #458588;
 }
