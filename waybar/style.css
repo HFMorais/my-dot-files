@@ -30,6 +30,8 @@
 
 /* Gruvbox */
 @define-color bg #1d2021;
+@define-color light_bg #504945;
+@define-color lighter_bg #665c54;
 @define-color light #ebdbb2;
 @define-color warning #d79921;
 @define-color critical #fb4934;
@@ -183,7 +185,7 @@
 }
 
 #bluetooth {
-    background: @nord_bg_blue;
+    background: @light_bg;
     font-size: 1.2em;
     font-weight: bold;
     padding: 0 0.6em;
@@ -221,7 +223,7 @@
 }
 
 #network {
-    background: @nord_bg_blue;
+    background: @light_bg;
 }
 
 #memory {
@@ -229,26 +231,26 @@
 }
 
 #cpu {
-    background: @nord_bg;
+    background: @lighter_bg;
     color: #d5c4a1;
 }
 #cpu.critical {
     color: @nord_dark_font;
 }
 #language {
-    background: @nord_bg_blue;
+    background: @light_bg;
     color: #d5c4a1;
     padding: 0 0.4em;
 }
 #custom-cpugovernor {
-    background-color: @nord_light;
+    background-color: @lighter_bg;
     color: @nord_dark_font;
 }
 #custom-cpugovernor.perf {
     
 }
 #temperature {
-    background-color: @nord_bg;
+    background-color: @lighter_bg;
     color: #d5c4a1;
 }
 #temperature.critical {
@@ -267,7 +269,7 @@
 }
 
 #clock {
-    background: @nord_bg_blue;
+    background: @light_bg;
     color: #d5c4a1;
 }
 #clock.date {
@@ -279,7 +281,7 @@
 }
 
 #pulseaudio { /* Unsused but kept for those who needs it */
-    background: @nord_bg_blue;
+    background: @light_bg;
     color: #d5c4a1;
 }
 
@@ -294,5 +296,5 @@
     /* No styles */
 }
 #tray {
-    background: #458588;
+    background: #928374;
 }
